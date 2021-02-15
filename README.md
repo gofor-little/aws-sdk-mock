@@ -1,0 +1,31 @@
+## A package for mocking interactions with AWS services
+
+![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/gofor-little/mock?include_prereleases)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gofor-little/mock)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/gofor-little/mock/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gofor-little/mock)](https://goreportcard.com/report/github.com/gofor-little/mock)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/gofor-little/mock)](https://pkg.go.dev/github.com/gofor-little/mock)
+
+### Introduction
+* Mock interactions with AWS services
+* Make unit testing quicker and easier
+
+### Example
+```go
+package mock_test
+
+import (
+    "github.com/gofor-little/aws-sdk-mock"
+)
+
+func TestMockExample(t *testing.T) {
+    client := mock.S3client{}
+
+    output, err := client.GetObjectWithContext(context.Background(), &s3.GetObjectInput{})
+    if err != nil {
+        t.Fatal(err)
+    }
+
+    // Check output is correct.
+}
+```
