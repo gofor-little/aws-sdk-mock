@@ -1,10 +1,10 @@
 ## A package for mocking interactions with AWS services
 
-![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/gofor-little/mock?include_prereleases)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gofor-little/mock)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/gofor-little/mock/main/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gofor-little/mock)](https://goreportcard.com/report/github.com/gofor-little/mock)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/gofor-little/mock)](https://pkg.go.dev/github.com/gofor-little/mock)
+![GitHub tag (latest SemVer pre-release)](https://img.shields.io/github/v/tag/gofor-little/aws-sdk-mock?include_prereleases)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gofor-little/aws-sdk-mock)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/gofor-little/aws-sdk-mock/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gofor-little/aws-sdk-mock)](https://goreportcard.com/report/github.com/gofor-little/aws-sdk-mock)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/gofor-little/aws-sdk-mock)](https://pkg.go.dev/github.com/gofor-little/aws-sdk-mock)
 
 ### Introduction
 * Mock interactions with AWS services
@@ -26,6 +26,6 @@ func TestMockExample(t *testing.T) {
         t.Fatal(err)
     }
 
-    // Check output is correct.
+    // Check output is correct...
 }
 ```
