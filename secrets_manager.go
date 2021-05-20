@@ -15,7 +15,7 @@ type SecretsManagerClient struct {
 }
 
 // GetSecretValueWithContext fetches a secret value.
-func (m *SecretsManagerClient) GetSecretValueWithContext(ctx aws.Context, input *secretsmanager.GetSecretValueInput, options ...request.Option) (*secretsmanager.GetSecretValueOutput, error) {
+func (s *SecretsManagerClient) GetSecretValueWithContext(ctx aws.Context, input *secretsmanager.GetSecretValueInput, options ...request.Option) (*secretsmanager.GetSecretValueOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}

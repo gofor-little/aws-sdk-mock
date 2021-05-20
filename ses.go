@@ -13,7 +13,7 @@ type SESClient struct {
 }
 
 // SendRawEmailWithContext sends an email via SES.
-func (m *SESClient) SendRawEmailWithContext(ctx aws.Context, input *ses.SendRawEmailInput, options ...request.Option) (*ses.SendRawEmailOutput, error) {
+func (s *SESClient) SendRawEmailWithContext(ctx aws.Context, input *ses.SendRawEmailInput, options ...request.Option) (*ses.SendRawEmailOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}

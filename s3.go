@@ -13,7 +13,7 @@ type S3Client struct {
 }
 
 // GetObjectWithContext fetches an object from a bucket.
-func (m *S3Client) GetObjectWithContext(ctx aws.Context, input *s3.GetObjectInput, options ...request.Option) (*s3.GetObjectOutput, error) {
+func (s *S3Client) GetObjectWithContext(ctx aws.Context, input *s3.GetObjectInput, options ...request.Option) (*s3.GetObjectOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}

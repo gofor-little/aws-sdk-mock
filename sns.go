@@ -13,7 +13,7 @@ type SNSClient struct {
 }
 
 // PublishWithContext publishes an SNS notification.
-func (m *SNSClient) PublishWithContext(ctx aws.Context, input *sns.PublishInput, options ...request.Option) (*sns.PublishOutput, error) {
+func (s *SNSClient) PublishWithContext(ctx aws.Context, input *sns.PublishInput, options ...request.Option) (*sns.PublishOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}
