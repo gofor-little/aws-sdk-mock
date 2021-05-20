@@ -13,7 +13,7 @@ type CognitoClient struct {
 }
 
 // ConfirmSignUpWithContext confirms a newly signed up Cognito user.
-func (m *CognitoClient) ConfirmSignUpWithContext(ctx aws.Context, input *cognitoidentityprovider.ConfirmSignUpInput, options ...request.Option) (*cognitoidentityprovider.ConfirmSignUpOutput, error) {
+func (c *CognitoClient) ConfirmSignUpWithContext(ctx aws.Context, input *cognitoidentityprovider.ConfirmSignUpInput, options ...request.Option) (*cognitoidentityprovider.ConfirmSignUpOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}
@@ -22,7 +22,7 @@ func (m *CognitoClient) ConfirmSignUpWithContext(ctx aws.Context, input *cognito
 }
 
 // GlobalSignOutWithContext signs a Cognito user out of all their devices.
-func (m *CognitoClient) GlobalSignOutWithContext(ctx aws.Context, input *cognitoidentityprovider.GlobalSignOutInput, options ...request.Option) (*cognitoidentityprovider.GlobalSignOutOutput, error) {
+func (c *CognitoClient) GlobalSignOutWithContext(ctx aws.Context, input *cognitoidentityprovider.GlobalSignOutInput, options ...request.Option) (*cognitoidentityprovider.GlobalSignOutOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}
@@ -31,7 +31,7 @@ func (m *CognitoClient) GlobalSignOutWithContext(ctx aws.Context, input *cognito
 }
 
 // InitiateAuthWithContext signs a Cognito user in.
-func (m *CognitoClient) InitiateAuthWithContext(ctx aws.Context, input *cognitoidentityprovider.InitiateAuthInput, options ...request.Option) (*cognitoidentityprovider.InitiateAuthOutput, error) {
+func (c *CognitoClient) InitiateAuthWithContext(ctx aws.Context, input *cognitoidentityprovider.InitiateAuthInput, options ...request.Option) (*cognitoidentityprovider.InitiateAuthOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}
@@ -47,7 +47,7 @@ func (m *CognitoClient) InitiateAuthWithContext(ctx aws.Context, input *cognitoi
 }
 
 // SignUpWithContext creates a new Cognito user.
-func (m *CognitoClient) SignUpWithContext(ctx aws.Context, input *cognitoidentityprovider.SignUpInput, options ...request.Option) (*cognitoidentityprovider.SignUpOutput, error) {
+func (c *CognitoClient) SignUpWithContext(ctx aws.Context, input *cognitoidentityprovider.SignUpInput, options ...request.Option) (*cognitoidentityprovider.SignUpOutput, error) {
 	if err := input.Validate(); err != nil {
 		return nil, err
 	}
