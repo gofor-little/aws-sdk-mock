@@ -6,6 +6,9 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/gofor-little/aws-sdk-mock)](https://goreportcard.com/report/github.com/gofor-little/aws-sdk-mock)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/gofor-little/aws-sdk-mock)](https://pkg.go.dev/github.com/gofor-little/aws-sdk-mock)
 
+### Deprecated
+At this stage there are no plans to migrate to v2 of the AWS Go SDK or continue to maintain this package.
+
 ### Introduction
 * Mock interactions with AWS services
 * Make unit testing quicker and easier
